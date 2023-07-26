@@ -10,22 +10,76 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
+    <script src="https://kit.fontawesome.com/b450559676.js" crossorigin="anonymous"></script>
+    <!-- Lato Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        .lato-font{
+            font-family: 'Lato', sans-serif;
         }
-      </script>
+        
+
+    </style>
+    <!-- Lato Font Ends -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-bg-color":"#F85559",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
+  <body class="font-lato-font">
     <header>
       <!-- Navbar Start-->
-      <nav></nav>
+      <nav class="container mx-auto my-14 flex">
+        <div class="navbar bg-primary-bg-color h-28 p-12 text-white rounded-full ">
+            <div class="navbar-center">
+              <div class="dropdown  ">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-start hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            <div class="flex flex-row-reverse">
+                <a class="btn btn-ghost normal-case font-bold text-3xl">Fruit Burst</a>
+                <img class="h-12 w-auto" src="images/logo.png" alt="logo">
+            </div>
+            
+            <div class="navbar-end flex flex-auto">
+                <!-- <input type="text" placeholder="Search here" class="input w-96 rounded-full" /> -->
+                <div class="search-container hidden md:block relative">
+                    <input type="text" placeholder="Search here" class="input w-80 rounded-full" />
+                    <button class="search-button text-gray-800 absolute top-[14px] right-[25px]"><i class="fas fa-search"></i></button>
+                  </div>
+
+            </div>
+        </div>
+      </nav>
       <!-- Navbar Ends-->
 
       <!-- Banner Start -->
