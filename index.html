@@ -1,90 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fruit Brust Website</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/b450559676.js" crossorigin="anonymous"></script>
-    <!-- Lato Font Family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-        .lato-font{
-            font-family: 'Lato', sans-serif;
-        }
-        
 
-    </style>
-    <!-- Lato Font Ends -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              "primary-bg-color":"#F85559",
-            },
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fruit Brust Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/b450559676.js" crossorigin="anonymous"></script>
+  <!-- Lato Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+  <style>
+    .lato-font {
+      font-family: "Lato", sans-serif;
+    }
+  </style>
+  <!-- Lato Font Ends -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+            "primary-bg-color": "#F85559",
           },
         },
-      };
-    </script>
-  </head>
-  <body class="font-lato-font">
-    <header>
-      <!-- Navbar Start-->
-      <nav class="container mx-auto my-14 flex">
-        <div class="navbar bg-primary-bg-color h-28 p-12 text-white rounded-full ">
-            <div class="navbar-center">
-              <div class="dropdown  ">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Home</a></li>
-                  <li><a>About Us</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>All Fruits</a></li>
-                </ul>
+      },
+    };
+  </script>
+</head>
+
+<body class="font-lato-font">
+  <header>
+    <!-- Navbar Start-->
+    <nav class="container mx-auto my-14">
+      <div class="navbar bg-primary-bg-color h-28 p-12 text-white rounded-full flex justify-between">
+        <!-- Hambargur Icon start -->
+        <div class="navbar-center">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="navbar-start hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <!-- Logo and Text -->
+        <div class="navbar-center hidded lg:flex">
+          <img class="h-12 w-auto" src="images/logo.png" alt="logo" />
+          <a class="btn btn-ghost normal-case font-bold text-3xl">Fruit Burst</a>
+        </div>
+        <!-- Logo and Text Ends -->
+
+        <!-- Search Button -->
+        <div class="navbar-end flex flex-auto">
+          <div class="search-container hidden md:block relative">
+            <input type="text" placeholder="Search here" class="input w-80 rounded-full" />
+            <button class="search-button text-gray-800 absolute top-[14px] right-[25px]">
+              <i class="fas fa-search"></i>
+            </button>
+            <!-- Search Button Ends -->
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <!-- Navbar Ends-->
+
+    <!-- Banner Start -->
+    <main>
+      <section class="md:container md:mx-auto">
+        <!-- carousel start -->
+          <div class="carousel w-full">
+            <div class="carousel w-full my-3 rounded-2xl min-h-max">
+              <!-- slide 1 -->
+              <div id="slide1" class="carousel-item relative w-full flex items-center justify-center">
+                <div class="bg-gradient-to-b from-black to-transparent absolute h-full w-full"></div>
+                <div class="absolute text-white flex flex-col items-center space-y-2 md:space-y-6">
+                  <h1 class="text-2xl md:text-3xl lg:text-7xl font-bold text-center">
+                    Exotic tastes at your<br>doorstep
+                  </h1>
+                  <p class="text-xs flex-auto text-zinc-200 md:text-md lg:text-xl md:w-full text-center">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn bg-primary-bg-color w-30 bg-color-prim text-white border-none capitalize hover:bg-red-400 text-xs md:text-sm px-4 md:px-4 h-8 md:h-10">
+                    Shop Now
+                  </button>
+                </div>
+                <img src="images/banner1.png" class="w-full h-full object-cover" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide4" class="btn btn-circle text-white bg-black border-none btn- btn-xs md:btn-md">❮</a>
+                  <a href="#slide2" class="btn btn-circle  text-white bg-black border-none btn-xs md:btn-md">❯</a>
+                </div>
+              </div> 
+              <!-- slide 2 -->
+              <div id="slide2" class="carousel-item relative w-full flex items-center justify-center">
+                <div class="bg-gradient-to-b from-black to-transparent absolute h-full w-full"></div>
+                <div class="absolute text-white flex flex-col items-center space-y-2 md:space-y-6">
+                  <h1 class="text-2xl md:text-3xl lg:text-7xl font-bold text-center">
+                    Exotic tastes at your<br>doorstep
+                  </h1>
+                  <p class="text-xs flex-auto text-zinc-200 md:text-md lg:text-xl md:w-full text-center">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn bg-primary-bg-color w-30 bg-color-prim text-white border-none capitalize hover:bg-red-400 text-xs md:text-sm px-4 md:px-4 h-8 md:h-10">
+                    Shop Now
+                  </button>
+                </div>
+                <img src="images/banner2.png" class="w-full h-full object-cover" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide1" class="btn btn-circle text-white bg-black border-none btn- btn-xs md:btn-md">❮</a>
+                  <a href="#slide3" class="btn btn-circle  text-white bg-black border-none btn-xs md:btn-md">❯</a>
+                </div>
+              </div>
+              <!-- slide 3 -->
+              <div id="slide3" class="carousel-item relative w-full flex items-center justify-center">
+                <div class="bg-gradient-to-b from-black to-transparent absolute h-full w-full"></div>
+                <div class="absolute text-white flex flex-col items-center space-y-2 md:space-y-6">
+                  <h1 class="text-2xl md:text-3xl lg:text-7xl font-bold text-center">
+                    Exotic tastes at your<br>doorstep
+                  </h1>
+                  <p class="text-xs flex-auto text-zinc-200 md:text-md lg:text-xl md:w-full text-center">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn bg-primary-bg-color w-30 bg-color-prim text-white border-none capitalize hover:bg-red-400 text-xs md:text-sm px-4 md:px-4 h-8 md:h-10">
+                    Shop Now
+                  </button>
+                </div>
+                <img src="images/banner3.png" class="w-full h-full object-cover" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide2" class="btn btn-circle text-white bg-black border-none btn- btn-xs md:btn-md">❮</a>
+                  <a href="#slide4" class="btn btn-circle  text-white bg-black border-none btn-xs md:btn-md">❯</a>
+                </div>
+              </div>
+              <!-- slide 4 -->
+              <div id="slide4" class="carousel-item relative w-full flex items-center justify-center">
+                <div class="bg-gradient-to-b from-black to-transparent absolute h-full w-full"></div>
+                <div class="absolute text-white flex flex-col items-center space-y-2 md:space-y-6">
+                  <h1 class="text-2xl md:text-3xl lg:text-7xl font-bold text-center">
+                    Exotic tastes at your<br>doorstep
+                  </h1>
+                  <p class="text-xs flex-auto text-zinc-200 md:text-md lg:text-xl md:w-full text-center">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn bg-primary-bg-color w-30 bg-color-prim text-white border-none capitalize hover:bg-red-400 text-xs md:text-sm px-4 md:px-4 h-8 md:h-10">
+                    Shop Now
+                  </button>
+                </div>
+                <img src="images/banner4.png" class="w-full h-full object-cover" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide3" class="btn btn-circle text-white bg-black border-none btn- btn-xs md:btn-md">❮</a>
+                  <a href="#slide1" class="btn btn-circle  text-white bg-black border-none btn-xs md:btn-md">❯</a>
+                </div>
               </div>
             </div>
-            <div class="navbar-start hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Shop</a></li>
-                <li><a>All Fruits</a></li>
-              </ul>
-            </div>
-            <div class="flex flex-row-reverse">
-                <a class="btn btn-ghost normal-case font-bold text-3xl">Fruit Burst</a>
-                <img class="h-12 w-auto" src="images/logo.png" alt="logo">
-            </div>
-            
-            <div class="navbar-end flex flex-auto">
-                <!-- <input type="text" placeholder="Search here" class="input w-96 rounded-full" /> -->
-                <div class="search-container hidden md:block relative">
-                    <input type="text" placeholder="Search here" class="input w-80 rounded-full" />
-                    <button class="search-button text-gray-800 absolute top-[14px] right-[25px]"><i class="fas fa-search"></i></button>
-                  </div>
-
-            </div>
+          </div>
         </div>
-      </nav>
-      <!-- Navbar Ends-->
+        <!-- carousel ends -->
+      </section>
+    </main>
+    <!-- Banner Ends -->
 
-      <!-- Banner Start -->
-      <section></section>
-      <!-- Banner Ends -->
-    </header>
-  </body>
+</body>
+
 </html>
